@@ -1,0 +1,44 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /usr/socs/Profile ]; then
+        . /usr/socs/Profile
+fi
+
+# User specific aliases and functi
+
+#A1Q3 - Leila Erbay- Login Script for Trottier Computers
+#Q3.1
+
+PS1="YouSoCool" 
+ echo "Welcome  $PS1"
+
+#Q3.2
+PS1=$LOGNAME$PS1" "'$PWD'" " 
+
+#Q3.3
+alias lsa='ls -l -a'
+
+#Q3.4
+ALL_OR=who | grep -i -E 'sdesai6|acutea|rgao11|jzhang207'
+if [ "$ALL_OR" ]
+then
+ echo "At least one of your friends is online"
+ echo " " 
+ who | grep -i -E 'sdesai6|acutea|rgao11|jzhang207'
+else 
+ echo "only you are online"
+fi
+
+#Q3.5
+if [ "$DESKTOP_SESSION" = "ubuntu" ]
+then 
+ URL='http://vimdoc.sourceforge.net/htmldoc/quotes.html'
+ x-www-browser $URL
+else
+echo "you are not logged into a server with a GUI"
+fi
+
+#Q3.6
+date >> MyLoginHistory.txt
+

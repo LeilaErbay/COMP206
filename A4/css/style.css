@@ -1,0 +1,71 @@
+.center{
+    text-align: center;
+}
+
+.transport_buttons_container{
+    width: 130px;
+}
+
+.button{
+    margin: 1px;
+}
+
+.north_button{
+
+}
+
+.east_button{
+    float : right;
+}
+
+.west_button{
+    float : left;
+}
+
+.south_button{
+
+}
+
+.submit{
+    margin: 16px;
+}
+
+.helper_text_container{
+    display: block;
+    overflow: auto;
+    float: right;
+    padding: 10px;
+    border: 2px groove;
+}
+
+.instructions_container{
+    border-style: groove;
+    display: block;
+    overflow: auto;
+    padding: 10px;
+}
+
+.instructions{
+}
+
+.result_container{
+    border-style: groove;
+    margin-top: 70px;
+    display: block;
+    overflow: auto;
+    padding: 10px;
+}
+
+#challenge{
+    #display: none;
+    text-align: center;
+    border: 3px solid green;
+    padding: 32px;
+}
+
+#room{
+   # display: none;
+    text-align: center;
+    border: 3px solid green;
+    padding: 32px;
+}
